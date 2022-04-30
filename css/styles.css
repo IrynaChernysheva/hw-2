@@ -53,6 +53,7 @@ font-weight: 400;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
+    text-decoration: none;
 }
 .group-mailto:hover {
     color: #757575;
@@ -64,6 +65,7 @@ font-weight: 400;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
+    text-decoration: none;
 }
 
 /* шапка сайта*/
@@ -185,6 +187,7 @@ font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #ffffff99;
+    text-decoration: none;
 }
 
 /*портфолио*/
