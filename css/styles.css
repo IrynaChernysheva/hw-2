@@ -1,7 +1,9 @@
 body {
 font-family:"Roboto","Raleway" sans-serif;
-
+font-style: normal;
+font-weight: 400;
 }
+
 /*верхняя линия*/
 .logo-blue {
     font-family: 'Raleway';
@@ -30,29 +32,41 @@ font-family:"Roboto","Raleway" sans-serif;
     color: #ffffff;
     text-decoration: none;
 }
-.link {
-  
+.link { 
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
-    text-decoration: none;
+    text-decoration: none; 
+    
 }
-.header-group {
+.link.active{ 
+    color: #2196F3;
+}
+
+.group-mailto {   
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-}
-.group-mailto {   
-    color: #2196F3;
-}
-.group-tel {
     color: #757575;
 }
+.group-mailto:hover {
+    color: #757575;
+}
+.group-tel {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+
+/* шапка сайта*/
 .hero {
     background-color: #2F303A;;
 }
@@ -79,6 +93,11 @@ font-family:"Roboto","Raleway" sans-serif;
     background-color:#2196F3;
     border-style: none;
 }
+.hero-navigtion:focus,
+.hero-navigtion:active 
+.hero-navigtion:hover{
+    background-color: #2196F3;
+}
 .peculiarities-title {
 
 }
@@ -101,6 +120,8 @@ font-family:"Roboto","Raleway" sans-serif;
     letter-spacing: 0.03em;
     color: #757575;
 }
+
+/*чем мы занимаемся*/
 .what-are-we-doing {
     font-family: 'Roboto';
     font-weight: 700;
@@ -109,11 +130,14 @@ font-family:"Roboto","Raleway" sans-serif;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    
 }
 .going {
     background: url;
     mix-blend-mode: normal;
 }
+
+/*наша команда*/
 .our-team {
     font-family: 'Roboto';
     font-weight: 700;
@@ -140,6 +164,8 @@ font-family:"Roboto","Raleway" sans-serif;
     letter-spacing: 0.03em;    
     color: #757575;
 }
+
+/*подвал*/
 .footer {
     background-color: #2F303A;
 }
@@ -160,6 +186,8 @@ font-family:"Roboto","Raleway" sans-serif;
     letter-spacing: 0.03em;
     color: #ffffff99;
 }
+
+/*портфолио*/
 .filter-btn {
     font-family: 'Roboto';
     font-weight: 500;
@@ -181,6 +209,11 @@ font-family:"Roboto","Raleway" sans-serif;
     background-color:#2196F3;
     border-style: none;
 }
+.filter-btn:active,
+.filter-btn:focus {
+    background-color:#2196F3;
+    
+}
 .portfolio-title {
     font-family: 'Roboto';
     font-weight: 700;
@@ -195,4 +228,11 @@ font-family:"Roboto","Raleway" sans-serif;
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: #757575;
+}
+.link:focus,
+.link:hover {
+    color: #2196F3;
+}
+.li {
+    list-style-type: none;
 }
