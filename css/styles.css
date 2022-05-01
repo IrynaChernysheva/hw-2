@@ -1,7 +1,15 @@
+:root {
+--title-text-color: #212121;
+--text-color: #757575;
+--brend-color: #2196F3;
+--primary-white-color:#ffffff;
+
+}
 body {
-font-family:"Roboto","Raleway" sans-serif;
+font-family:"Roboto", sans-serif;
 font-style: normal;
-font-weight: 400;
+font-size: 14px;
+text-decoration: none;
 }
 
 /*верхняя линия*/
@@ -11,10 +19,10 @@ font-weight: 400;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color:var(--brend-color);
     text-decoration: none;
     }
-.logo-black {
+.logo-header {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -23,67 +31,64 @@ font-weight: 400;
     color: #000000;
     text-decoration: none;
 }
-.logo-white {
+.logo-footer {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;;
-    color: #ffffff;
+    color:var(--primary-white-color);
     text-decoration: none;
 }
 .link { 
-    font-family: 'Roboto';
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    color:var(--title-text-color);
     text-decoration: none; 
     
 }
 .link.active{ 
-    color: #2196F3;
+    color: var(--brend-color);
 }
 
 .group-mailto {   
-    font-family: 'Roboto';
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #757575;
-    text-decoration: none;
-}
-.group-mailto:hover {
-    color: #757575;
-}
-.group-tel {
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--text-color);
     text-decoration: none;
 }
 
+.group-tel {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.group-mailto:hover,
+.group-mailto:focus,
+.group-tel:hover,
+.group-tel:focus {
+    color: var(--brend-color);
+}
 /* шапка сайта*/
 .hero {
     background-color: #2F303A;;
 }
 .hero-title {
-    font-family: 'Roboto';
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--primary-white-color);
 }
 .hero-navigtion {
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -91,47 +96,39 @@ font-weight: 400;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;   
-    color: #FFFFFF;
-    background-color:#2196F3;
+    color: var(--primary-white-color);
+    background-color: var(--brend-color);
     border-style: none;
 }
 .hero-navigtion:focus,
 .hero-navigtion:active 
 .hero-navigtion:hover{
-    background-color: #2196F3;
+    background-color: var(--brend-color);
 }
-.peculiarities-title {
 
-}
 .attention-to-detail, 
 .punctuality,
 .planning,
 .modern-technologies{
-    font-family: 'Roboto';
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--title-text-color);
 }
 .link-discription {
-    font-family: 'Roboto';
-    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--text-color);
 }
 
 /*чем мы занимаемся*/
 .what-are-we-doing {
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-    text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--title-text-color);
     
 }
 .going {
@@ -141,30 +138,30 @@ font-weight: 400;
 
 /*наша команда*/
 .our-team {
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-    text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--title-text-color);
 }
 .member-title {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    text-align: center;
     letter-spacing: 0.03em;    
-    color: #212121;
+    color: var(--title-text-color)1;
 }
 .member-position {
-    font-family: 'Roboto';
     font-size: 16px;
     line-height: 1.19;
-    text-align: center;
     letter-spacing: 0.03em;    
-    color: #757575;
+    color:var(--text-color);
+}
+.team {
+    background-color: #F5F4FA;
+}
+.member-item {
+    background-color: #ffffff;
 }
 
 /*подвал*/
@@ -172,70 +169,70 @@ font-weight: 400;
     background-color: #2F303A;
 }
 .link-address {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;   
-    color: #FFFFFF;
+    color: var(--primary-white-color);
 }
 .group-mailto-footer,
 .group-tel-footer {
-    font-family: 'Roboto';
-    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #ffffff99;
     text-decoration: none;
 }
+.group-mailto-footer:hover,
+.group-mailto-footer:focus,
+.group-tel-footer:hover,
+.group-tel-footer:focus {
+    color: var(--brend-color);
+}
 
 /*портфолио*/
 .filter-btn {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;   
     text-align: center;
     letter-spacing: 0.03em;    
-    color: #212121;
+    color: var(--title-text-color);
     border-style: none;
 }
 .filter-btn-active {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #ffffff;
-    background-color:#2196F3;
+    color: var(--primary-white-color);
+    background-color: var(--brend-color);
     border-style: none;
 }
 .filter-btn:active,
 .filter-btn:focus {
-    background-color:#2196F3;
+    background-color: var(--brend-color);
+    color: var(--primary-white-color);
     
 }
 .portfolio-title {
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--title-text-color);
 }
 .portfolio-position {
-    font-family: 'Roboto';
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--text-color);
 }
 .link:focus,
 .link:hover {
-    color: #2196F3;
+    color: var(--brend-color);
 }
-.li {
+.list,
+.member-item,
+.portfolio-list,
+.item {
     list-style-type: none;
 }
