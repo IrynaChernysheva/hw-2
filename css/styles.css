@@ -172,9 +172,11 @@ text-decoration: none;
     line-height: 1.71;
     letter-spacing: 0.03em;   
     color: var(--primary-white-color);
+    font-style: normal;
 }
 .group-mailto-footer,
 .group-tel-footer {
+    font-style:normal
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #ffffff99;
